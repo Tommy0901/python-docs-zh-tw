@@ -1,31 +1,35 @@
 # Copyright (C) 2001 Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
+# Translators:
+# Tommy0901 <ak710180@gmail.com>, 2026
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-17 00:14+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-07-18 00:00+0000\n"
+"Last-Translator: Tommy0901 <ak710180@gmail.com>\n"
 "Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
 "tw)\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../c-api/picklebuffer.rst:9
 msgid "Pickle buffer objects"
-msgstr ""
+msgstr "Pickle 緩衝物件"
 
 #: ../../c-api/picklebuffer.rst:13
 msgid ""
 "A :class:`pickle.PickleBuffer` object wraps a :ref:`buffer-providing object "
 "<bufferobjects>` for out-of-band data transfer with the :mod:`pickle` module."
 msgstr ""
+":class:`pickle.PickleBuffer` 物件包裝了一個\\ :ref:`提供緩衝區的物件 "
+"<bufferobjects>`，用於搭配 :mod:`pickle` 模組進行帶外資料傳輸。"
 
 #: ../../c-api/picklebuffer.rst:19
 msgid ""
@@ -33,69 +37,78 @@ msgid ""
 "type. This is the same object as :class:`pickle.PickleBuffer` in the Python "
 "layer."
 msgstr ""
+"這個 :c:type:`PyTypeObject` 的實例代表了 Python 的 pickle 緩衝區型別，與 "
+"Python 層級中的 :class:`pickle.PickleBuffer` 是同一個物件。"
 
 #: ../../c-api/picklebuffer.rst:25
 msgid ""
 "Return true if *op* is a pickle buffer instance. This function always "
 "succeeds."
 msgstr ""
+"若 *op* 是一個 pickle 緩衝區的實例則會回傳 true。此函式每次都會執行成功。"
 
 #: ../../c-api/picklebuffer.rst:31
 msgid "Create a pickle buffer from the object *obj*."
-msgstr ""
+msgstr "從物件 *obj* 建立一個 pickle 緩衝區。"
 
 #: ../../c-api/picklebuffer.rst:33
 msgid ""
 "This function will fail if *obj* doesn't support the :ref:`buffer protocol "
 "<bufferobjects>`."
-msgstr ""
+msgstr "若 *obj* 不支援\\ :ref:`緩衝協定 <bufferobjects>`，此函式將會失敗。"
 
 #: ../../c-api/picklebuffer.rst:35
 msgid ""
 "On success, return a new pickle buffer instance. On failure, set an "
 "exception and return ``NULL``."
 msgstr ""
+"成功時，回傳一個新的 pickle 緩衝區實例；失敗時，設定例外並回傳 ``NULL``。"
 
 #: ../../c-api/picklebuffer.rst:38
 msgid "Analogous to calling :class:`pickle.PickleBuffer` with *obj* in Python."
-msgstr ""
+msgstr "相當於在 Python 中呼叫 :class:`pickle.PickleBuffer` 並傳入 *obj*。"
 
 #: ../../c-api/picklebuffer.rst:43
 msgid ""
 "Get a pointer to the underlying :c:type:`Py_buffer` that the pickle buffer "
 "wraps."
-msgstr ""
+msgstr "取得指向 pickle 緩衝區所包裝之底層 :c:type:`Py_buffer` 的指標。"
 
 #: ../../c-api/picklebuffer.rst:45
 msgid ""
 "The returned pointer is valid as long as *picklebuf* is alive and has not "
-"been released. The caller must not modify or free the returned :c:type:"
-"`Py_buffer`. If the pickle buffer has been released, raise :exc:`ValueError`."
+"been released. The caller must not modify or free the "
+"returned :c:type:`Py_buffer`. If the pickle buffer has been released, "
+"raise :exc:`ValueError`."
 msgstr ""
+"只要 *picklebuf* 仍然存在且尚未被釋放，回傳的指標即為有效。呼叫者不得修改或釋"
+"放回傳的 :c:type:`Py_buffer`。若該 pickle 緩衝區已被釋放，則引"
+"發 :exc:`ValueError`。"
 
 #: ../../c-api/picklebuffer.rst:49
 msgid ""
 "On success, return a pointer to the buffer view. On failure, set an "
 "exception and return ``NULL``."
 msgstr ""
+"成功時，回傳一個指向緩衝區視圖的指標；失敗時，設定例外並回傳 ``NULL``。"
 
 #: ../../c-api/picklebuffer.rst:55
 msgid "Release the underlying buffer held by the pickle buffer."
-msgstr ""
+msgstr "釋放 pickle 緩衝區所持有的底層緩衝區。"
 
 #: ../../c-api/picklebuffer.rst:57
 msgid ""
 "Return ``0`` on success. On failure, set an exception and return ``-1``."
-msgstr ""
+msgstr "成功時回傳 ``0``；失敗時，設定例外並回傳 ``-1``。"
 
 #: ../../c-api/picklebuffer.rst:59
 msgid "Analogous to calling :meth:`pickle.PickleBuffer.release` in Python."
-msgstr ""
+msgstr "相當於在 Python 中呼叫 :meth:`pickle.PickleBuffer.release`。"
 
 #: ../../c-api/picklebuffer.rst:5
 msgid "object"
-msgstr ""
+msgstr "object（物件）"
 
 #: ../../c-api/picklebuffer.rst:5
 msgid "PickleBuffer"
-msgstr ""
+msgstr "PickleBuffer（Pickle 緩衝物件）"
